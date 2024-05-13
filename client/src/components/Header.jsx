@@ -11,10 +11,12 @@ function Header() {
   return (
     <section
       className={
-        theme === "light" ? `display-header dark` : `display-header light`
+        theme === "light" ? `display-header dark` : `display-header mystery-blue`
       }
     >
-      <img src={rick_logo} alt="rick-sanchez-logo" className="logo-header" />
+      <img src={rick_logo} alt="filter applied" className={
+        theme === "dark" ? `logo-header light` : `logo-header greenlazer`
+      } />
       <button className={
         theme === "light" ? `btn-nav-bar greenlazer` : `btn-nav-bar dark`
       } onClick={() => navigate("/")}>Home</button>

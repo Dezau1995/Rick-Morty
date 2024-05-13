@@ -1,17 +1,22 @@
-.image-character {
-    width: max-content;
-    border: 2px solid black;
+.figure-card-character{
     border-radius: 10px;
     overflow: hidden;
+    background-color: var(--second-color);
+    box-shadow: 0px 0px 30px  black;
+    transition: all 1s ease-in-out;
 }
+
+.figure-card-character:hover{
+    box-shadow: 0px 0px 50px  #88e23b;
+    transform: scale(1.1);
+}
+
 
 .character-name {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: var(--second-color);
     font-family: var(--primary-font);
-    color: var(--third-color);
-    height: 5vh;
-    margin: 0;
+    color: #a6cccc;
+    padding: 10px;
 }
