@@ -24,7 +24,6 @@ function HomePage() {
   }, [pages]);
 
   const { theme } = useTheme();
-  console.log(theme);
 
   const searchUrl = `https://rickandmortyapi.com/api/character/?page=${pages}&name=${text}`;
 
@@ -35,7 +34,7 @@ function HomePage() {
   useEffect(() => {
     axios.get(searchUrl).then((response) => {
       setTabData(response.data.results);
-      setPages(1);
+      // setPages(1);
     });
   }, [searchUrl]);
 
@@ -52,6 +51,9 @@ function HomePage() {
           placeholder="Search your character"
           value={text}
           onChange={handleChange}
+          className={
+            theme === "light" ? `input-home dark` : `input-home mystery-blue`
+          }
         />
       </div>
       <div className="display-card">

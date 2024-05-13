@@ -44,7 +44,7 @@
   }
   
   .toggle-checkbox:checked + .toggle-switch {
-    background: #ccc;
+    background: #88e23b;
   }
   
   .toggle-checkbox:checked + .toggle-switch::before {

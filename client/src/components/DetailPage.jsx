@@ -19,23 +19,27 @@ function DetailPage() {
   return (
     <div className={`display-detail-page ${theme}`}>
       <div className="display-card-detail">
-          <img src={character.image} alt="charater-picture" className="character-picture"/>
+        <img
+          src={character.image}
+          alt="charater-picture"
+          className="character-picture"
+        />
         <div className="info-character">
-          <h1>{character.name}</h1>
+          <h1 className="detail-character-name">{character.name}</h1>
           <p className="status">
             <div
               className={character.status === "Alive" ? "green" : "red"}
             ></div>
             {character.status} - {character.species}
           </p>
-          <p>
-            Last known location : <br />
-            {character.location.name}
-          </p>
-          <p>
-            First seen in : <br />
-            {getEpisode}
-          </p>
+          <div>
+          <p className="detail-character-details">Last known location : </p>
+          <p>{character.location.name}</p>
+          </div>
+          <div>
+          <p className="detail-character-details">First seen in : </p>
+          <p> {getEpisode}</p>
+          </div>
         </div>
       </div>
     </div>

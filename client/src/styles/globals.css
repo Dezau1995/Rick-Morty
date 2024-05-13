@@ -49,13 +49,13 @@ a {
 }
 
 .dark {
-  color: var(--third-color);
-  background-color: var(--primary-color);
+  color: #a6cccc;
+  background-color: black;
 }
 
 .light {
-  color: var(--primary-color);
-  background-color: var(--third-color);
+  color: black;
+  background-color: #a6cccc;
 }
 
 .app {
