@@ -1,0 +1,31 @@
+.display-home-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  background-color: var(--primary-color);
+  gap: 20px;
+}
+
+.display-home-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.display-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.dark {
+  color: var(--third-color);
+  background-color: var(--primary-color);
+}
+
+.light {
+  color: var(--primary-color);
+  background-color: var(--third-color);
+}

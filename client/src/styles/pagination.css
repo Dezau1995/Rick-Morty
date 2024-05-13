@@ -1,0 +1,22 @@
+.btn-pagination {
+  border: none;
+  background-color: var(--third-color);
+  cursor: pointer;
+  width: 100px;
+  height: 100px;
+}
+
+.btn-arrow {
+  width: 40%;
+  height: 40%;
+}
+
+.dark {
+  color: var(--third-color);
+  background-color: var(--primary-color);
+}
+
+.light {
+  color: var(--primary-color);
+  background-color: var(--third-color);
+}

@@ -1,0 +1,17 @@
+.image-character {
+    width: max-content;
+    border: 2px solid black;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.character-name {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--second-color);
+    font-family: var(--primary-font);
+    color: var(--third-color);
+    height: 5vh;
+    margin: 0;
+}

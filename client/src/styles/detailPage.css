@@ -1,0 +1,56 @@
+.display-detail-page {
+  display: flex;
+  justify-content: center;
+  height: 85%;
+  align-items: center;
+}
+
+.display-card-detail {
+  display: flex;
+  flex-direction: row;
+  border-radius: 10px;
+  overflow: hidden;
+  width: 60%;
+  box-shadow: 0px 0px 90px  black;
+  transition: all 1s ease-in-out;
+}
+
+.display-card-detail:hover{
+  box-shadow: 0px 0px 90px  rgb(44, 230, 44);
+  transform: scale(1.2);
+}
+
+.character-picture {
+  height: 50%;
+  background-color: var(--second-color);
+}
+
+.info-character {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 70%;
+  background-color: var(--second-color);
+  gap: 20px;
+}
+
+.status {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  justify-content: center;
+}
+
+.green {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: green;
+}
+
+.red {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: red;
+}
